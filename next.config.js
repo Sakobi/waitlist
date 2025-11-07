@@ -5,8 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: "/waitlist",
-  assetPrefix: "/waitlist",
+  basePath: "",
+  assetPrefix: "",
   outputFileTracingRoot: __dirname,
   webpack: (config, { isServer }) => {
     // Fix for potential module resolution issues
