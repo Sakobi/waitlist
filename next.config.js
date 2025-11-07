@@ -5,8 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '',
-  assetPrefix: '',
+  basePath: '/Sakobi_w8list',
+  assetPrefix: '/Sakobi_w8list',
   outputFileTracingRoot: __dirname,
   webpack: (config, { isServer }) => {
     // Fix for potential module resolution issues
