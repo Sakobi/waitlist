@@ -1,12 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  output: "export",
   reactStrictMode: true,
   images: {
     unoptimized: true,
   },
-  basePath: '/Sakobi_w8list',
-  assetPrefix: '/Sakobi_w8list',
+  basePath: "/waitlist",
+  assetPrefix: "/waitlist",
   outputFileTracingRoot: __dirname,
   webpack: (config, { isServer }) => {
     // Fix for potential module resolution issues
@@ -18,6 +18,6 @@ const nextConfig = {
     }
     return config;
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
