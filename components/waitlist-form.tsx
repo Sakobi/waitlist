@@ -50,6 +50,14 @@ export function WaitlistForm() {
       } else {
         setStatus("success");
         setEmail("");
+
+        // Track successful signup in Google Analytics
+        if (typeof window !== 'undefined' && (window as any).gtag) {
+          (window as any).gtag('event', 'waitlist_signup', {
+            event_category: 'engagement',
+            event_label: 'email_signup'
+          });
+        }
       }
     } catch (error) {
       setStatus("error");
